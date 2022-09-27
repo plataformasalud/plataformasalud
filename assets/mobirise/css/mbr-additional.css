@@ -791,7 +791,7 @@ a {
     display: none;
   }
   .cid-tisC8WgN9l .navbar.navbar-short {
-    background: rgba(245, 245, 247, 0.75) !important;
+    background: rgba(245, 245, 247, 0.85) !important;
     min-height: 10px !important;
     margin-top: 0px !important;
   }
@@ -803,8 +803,8 @@ a {
   }
   .cid-tisC8WgN9l .navbar .navbar-brand {
     padding-left: 10px;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
   .cid-tisC8WgN9l .dropdown-menu {
     padding-top: 0;
@@ -922,11 +922,11 @@ a {
   -webkit-flex-direction: column;
   flex-direction: column;
   transition: all .3s;
-  background: rgba(245, 245, 247, 0.75) !important;
+  background: rgba(245, 245, 247, 0.85) !important;
 }
 @media (min-width: 992px) {
   .cid-tisC8WgN9l .navbar.navbar-short {
-    background: rgba(245, 245, 247, 0.75) !important;
+    background: rgba(245, 245, 247, 0.85) !important;
     min-height: 10px;
     margin-top: 0px !important;
   }
@@ -938,8 +938,8 @@ a {
     height: 3.8rem !important;
   }
   .cid-tisC8WgN9l .navbar.navbar-short .navbar-brand {
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
   .cid-tisC8WgN9l .navbar .dropdown-item {
     padding-top: .2rem;
@@ -1026,7 +1026,7 @@ a {
 @media (min-width: 992px) {
   .cid-tisC8WgN9l .dropdown-menu {
     min-width: 5rem;
-    padding-top: 1.4rem !important;
+    padding-top: 1.3rem !important;
   }
 }
 @media (max-width: 991px) {
@@ -1084,7 +1084,7 @@ a {
 @media (min-width: 992px) {
   .cid-tisC8WgN9l .dropdown-menu,
   .cid-tisC8WgN9l .navbar.opened {
-    background: rgba(245, 245, 247, 0.75) !important;
+    background: rgba(245, 245, 247, 0.85) !important;
   }
 }
 .cid-tisC8WgN9l .nav-item:focus,
@@ -1189,8 +1189,8 @@ a {
   transition: all .3s;
   word-break: break-word;
   z-index: 1;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 .cid-tisC8WgN9l .navbar-brand .navbar-caption {
   line-height: inherit !important;
@@ -2570,24 +2570,6 @@ a {
 }
 .cid-tiFuW9DJf2 .card-title {
   color: #3b4449;
-}
-.cid-tiEoVSHAT9 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #ffffff;
-}
-.cid-tiEoVSHAT9 .image-wrapper {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-top: 5px;
-  margin-right: 1rem;
-  overflow: hidden;
-}
-.cid-tiEoVSHAT9 .image-wrapper img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
 .cid-tiDwE9INUD {
   padding-top: 30px;
