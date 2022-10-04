@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "SALUD.AR",
-    "currentPage": "inicio.html",
+    "currentPage": "funcionalidades.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -82,7 +82,7 @@
     "witsec-white-label": true,
     "witsec-jquery": false,
     "global_after_body": "",
-    "uniqCompNum": 188,
+    "uniqCompNum": 195,
     "versionPublish": "5.6.5",
     "screenshot": "screenshot.png",
     "robotsText": "User-agent: *\nDisallow: \nDisallow: /cgi-bin/"
@@ -2273,7 +2273,7 @@
           },
           "_name": "content10",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content10\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"10\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"6\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#f5f5f7\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\">\n                    Recorridos iniciales de&nbsp;<b>salud</b><a href=\"funcionalidades.html\" class=\"text-success\" style=\"font-weight: bold;\"><b>.</b></a><b style=\"font-weight: bold;\"><a href=\"funcionalidades.html\" class=\"text-primary\"><b>ar</b></a></b></h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\">Te mostramos en breves clips algunos de los recorridos y características más comunes que tiene SALUD.AR para asistirte en el día a día.<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content10\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"10\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"7\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"6\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#f5f5f7\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\">\n                    Recorridos iniciales de&nbsp;<b>salud</b><a href=\"funcionalidades.html\" class=\"text-success\" style=\"font-weight: bold;\"><b>.</b></a><b style=\"font-weight: bold;\"><a href=\"funcionalidades.html\" class=\"text-primary\"><b>ar</b></a></b></h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\">Te mostramos en breves clips algunos de los recorridos y características más comunes que tiene SALUD.AR para asistirte en el día a día.<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "content10-52",
           "_isUserblock": true,
           "_cid": "tj8uQuKAgz",
@@ -2293,18 +2293,114 @@
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
             ".video-wrapper iframe": {
               "width": "100%"
             },
-            ".mbr-section-title, .mbr-section-subtitle, .mbr-text": {
+            ".mbr-section-title, .mbr-description": {
               "text-align": "center"
+            },
+            ".text-wrapper when (@fullWidth)": {
+              "padding": "1rem"
+            },
+            "@media (min-width: 992px)": {
+              ".text-wrapper": {
+                "padding": "2rem",
+                "& when (@fullWidth)": {
+                  "padding-left": "4rem"
+                }
+              }
             }
           },
-          "_name": "video3",
+          "_name": "video5",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"video3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#f5f5f7\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://vimeo.com/428046504\" title=\"Video\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h4 class=\"mbr-section-title mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                <b>View in Action</b></h4>\n            <h5 class=\"mbr-section-subtitle mbr-fonts-style mb-0 mt-2\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\">Click on the video in this block to set the link to\n                your own video.</h5>\n        </div>\n        <div class=\"row mt-4\">\n            <div class=\"col-12 col-md-6 video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://youtu.be/n863XmOWrwY?loop=0&autoplay=0\"></iframe>\n                </div>\n                <p class=\"mbr-text pt-2 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-text\">\n                    Recorrido rápido (escritorio)</p>\n            </div>\n            <div class=\"col-12 col-md-6 video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://youtu.be/tIsY3L8La1Y?loop=0&autoplay=0\"></iframe>\n                </div>\n                <p class=\"mbr-text pt-2 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-text\">\n                    Asignación de permisos rápidos (smartphone)</p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "tj8v2L950r",
-          "_anchor": "video3-53",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"video5\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"2\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" name=\"videoWidth\" title=\"Video\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#f5f5f7\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://vimeo.com/428046504\" title=\"Video\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"title-wrapper mb-5\">\n            <h4 class=\"mbr-section-title mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                <b>Watch Video</b>\n            </h4>\n        </div>\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{videoWidth}} video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://youtu.be/n863XmOWrwY?loop=0&autoplay=0\"></iframe>\n                </div>\n                <p class=\"mbr-description pt-2 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\">\n                    Recorrido rápido (escritorio)</p>\n            </div>\n            <div class=\"col-12 col-lg\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n                        <b>Home con tarjetas dinámicas</b></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        La pantalla de inicio de SALUD.AR, tanto en su versión de escritorio como para smartphones, posee un conjunto de tarjetas interactivas que muestran información sobre tus turnos, recetas, órdenes, signos vitales y mucho más. Podés activar las tarjetas que más te sirvan y reordenarlas según tu preferencia.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tjisPCn9Tx",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "video5-59"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".video-wrapper iframe": {
+              "width": "100%"
+            },
+            ".mbr-section-title, .mbr-description": {
+              "text-align": "center"
+            },
+            ".text-wrapper when (@fullWidth)": {
+              "padding": "1rem"
+            },
+            "@media (min-width: 992px)": {
+              ".text-wrapper": {
+                "padding": "2rem",
+                "& when (@fullWidth)": {
+                  "padding-right": "4rem"
+                }
+              }
+            }
+          },
+          "_name": "video4",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"video4\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" name=\"videoWidth\" title=\"Video\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#f5f5f7\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://vimeo.com/428046504\" title=\"Video\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"title-wrapper mb-5\">\n            <h4 class=\"mbr-section-title mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                <b>Watch Video</b>\n            </h4>\n        </div>\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{videoWidth}} video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://youtu.be/tIsY3L8La1Y?loop=0&autoplay=0\"></iframe>\n                </div>\n                <p class=\"mbr-description pt-2 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\">\n                    Asignación de permisos rápidos (smartphone)</p>\n            </div>\n            <div class=\"col-12 col-lg\">\n                <div class=\"text-wrapper\">\n                    <h5 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n                        <b>Permisos rápidos</b></h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        Cuando necesites dar acceso a tus datos de salud por única vez podés generar una autorización temporal para tu médico utilizando la funcionalidad de permisos rápidos. Esta clase de ingresos son sólo válidos para profesionales de la salud certificados por la Superintendencia de Servicios de Salud, y expiran luego de 24 horas, o cuando vos los anules manualmente.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tjitrACnQA",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "video4-5b"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            ".video-wrapper iframe": {
+              "width": "100%"
+            },
+            ".mbr-section-title, .mbr-description": {
+              "text-align": "center"
+            },
+            ".text-wrapper when (@fullWidth)": {
+              "padding": "1rem"
+            },
+            "@media (min-width: 992px)": {
+              ".text-wrapper": {
+                "padding": "2rem",
+                "& when (@fullWidth)": {
+                  "padding-left": "4rem"
+                }
+              }
+            }
+          },
+          "_name": "video5",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"video5\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" name=\"videoWidth\" title=\"Video\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#f5f5f7\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://vimeo.com/428046504\" title=\"Video\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"title-wrapper mb-5\">\n            <h4 class=\"mbr-section-title mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                <b>Watch Video</b>\n            </h4>\n        </div>\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{videoWidth}} video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://youtu.be/vlSIeqRP5R0?loop=0&autoplay=0\"></iframe>\n                </div>\n                <p class=\"mbr-description pt-2 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\">\n                    Enviar receta (escritorio)</p>\n            </div>\n            <div class=\"col-12 col-lg\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n                        <b>Envío de recetas integrado</b></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        Cuando tu profesional médico te asigne una receta para un medicamento, esta aparecerá en tu cuenta de SALUD.AR. Desde el apartado Farmacias podés encontrar la más conveniente según tu ubicación y enviar la receta digital para su canje. Cuando el negocio tenga listo el producto para retirar recibirás una notificación.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "video5-5c",
+          "_isUserblock": true,
+          "_cid": "tjiDtwVfIo",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -2324,16 +2420,27 @@
             ".video-wrapper iframe": {
               "width": "100%"
             },
-            ".mbr-section-title, .mbr-section-subtitle, .mbr-text": {
+            ".mbr-section-title, .mbr-description": {
               "text-align": "center"
+            },
+            ".text-wrapper when (@fullWidth)": {
+              "padding": "1rem"
+            },
+            "@media (min-width: 992px)": {
+              ".text-wrapper": {
+                "padding": "2rem",
+                "& when (@fullWidth)": {
+                  "padding-right": "4rem"
+                }
+              }
             }
           },
-          "_name": "video3",
+          "_name": "video4",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"video3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#f5f5f7\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://vimeo.com/428046504\" title=\"Video\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h4 class=\"mbr-section-title mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                <b>View in Action</b></h4>\n            <h5 class=\"mbr-section-subtitle mbr-fonts-style mb-0 mt-2\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\">Click on the video in this block to set the link to\n                your own video.</h5>\n        </div>\n        <div class=\"row mt-4\">\n            <div class=\"col-12 col-md-6 video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://youtu.be/0MZ6eV3yhdU?loop=0&autoplay=0\"></iframe>\n                </div>\n                <p class=\"mbr-text pt-2 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-text\">\n                    Solicitar un turno (escritorio)</p>\n            </div>\n            <div class=\"col-12 col-md-6 video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://youtu.be/vlSIeqRP5R0?loop=0&autoplay=0\"></iframe>\n                </div>\n                <p class=\"mbr-text pt-2 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-text\">\n                    Enviar receta (escritorio)</p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "video3-54",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"video4\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" name=\"videoWidth\" title=\"Video\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#f5f5f7\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://vimeo.com/428046504\" title=\"Video\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"title-wrapper mb-5\">\n            <h4 class=\"mbr-section-title mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                <b>Watch Video</b>\n            </h4>\n        </div>\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{videoWidth}} video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://youtu.be/HjyFJKdJJ2k?loop=0&autoplay=0\"></iframe>\n                </div>\n                <p class=\"mbr-description pt-2 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\">\n                    Gestionar estudios (smartphone)</p>\n            </div>\n            <div class=\"col-12 col-lg\">\n                <div class=\"text-wrapper\">\n                    <h5 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n                        <b>Gestión de estudios y prácticas</b></h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        SALUD.AR te ayuda a gestionar todos tus documentos médicos. En la sección Estudios y prácticas vas a encontrar todos los resultados, informes, incidencias y diagnósticos de la salud que hayas tenido a lo largo del tiempo. Si la entidad que generó dicho documento trabaja con formato dinámico de SALUD.AR la información se adaptará a la pantalla de tu dispositivo.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "video4-5d",
           "_isUserblock": true,
-          "_cid": "tj8vhfrbWU",
+          "_cid": "tjiDZRPOYv",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -2350,21 +2457,33 @@
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
             ".video-wrapper iframe": {
               "width": "100%"
             },
-            ".mbr-section-title, .mbr-section-subtitle, .mbr-text": {
+            ".mbr-section-title, .mbr-description": {
               "text-align": "center"
+            },
+            ".text-wrapper when (@fullWidth)": {
+              "padding": "1rem"
+            },
+            "@media (min-width: 992px)": {
+              ".text-wrapper": {
+                "padding": "2rem",
+                "& when (@fullWidth)": {
+                  "padding-left": "4rem"
+                }
+              }
             }
           },
-          "_name": "video3",
+          "_name": "video5",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"video3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"10\" step=\"1\" condition=\"fullWidth==false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#f5f5f7\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://vimeo.com/428046504\" title=\"Video\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h4 class=\"mbr-section-title mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                <b>View in Action</b></h4>\n            <h5 class=\"mbr-section-subtitle mbr-fonts-style mb-0 mt-2\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\">Click on the video in this block to set the link to\n                your own video.</h5>\n        </div>\n        <div class=\"row mt-4\">\n            <div class=\"col-12 col-md-6 video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://youtu.be/HjyFJKdJJ2k?loop=0&autoplay=0\"></iframe>\n                </div>\n                <p class=\"mbr-text pt-2 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-text\">\n                    Abrir un estudio (smartphone)</p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "video3-55",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"video5\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" name=\"videoWidth\" title=\"Video\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#f5f5f7\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://vimeo.com/428046504\" title=\"Video\">\n        </fieldset>\n        <input type=\"text\" title=\"Fallback Image\" name=\"videoToImageOnMobile\" condition=\"overlay && bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth}\" video-to-image-on-mobile=\"{{videoToImageOnMobile}}\">\n        <div class=\"title-wrapper mb-5\">\n            <h4 class=\"mbr-section-title mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                <b>Watch Video</b>\n            </h4>\n        </div>\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{videoWidth}} video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://youtu.be/0MZ6eV3yhdU?loop=0&autoplay=0\"></iframe>\n                </div>\n                <p class=\"mbr-description pt-2 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\">\n                    Solicitar un turno (escritorio)</p>\n            </div>\n            <div class=\"col-12 col-lg\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n                        <b>Turnos que no dan ocupado</b></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        Llamar a un número para que alguien anote una cita médica en una libreta es algo del pasado. SALUD.AR te ayuda a gestionar turnos interactivos con tus médicos de siempre. Sólo tenés que ingresar en la sección turno y buscar un profesional por nombre, identificados, especialidad o centro de salud donde atiende.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "video5-5e",
           "_isUserblock": true,
-          "_cid": "tj8vrfghRS",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
+          "_cid": "tjiEDTObpK",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
