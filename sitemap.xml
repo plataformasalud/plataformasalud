@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://plataformasalud.ar/</loc>
+  <lastmod>2022-12-25T17:49:52+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://plataformasalud.ar/index.html</loc>
+  <lastmod>2022-12-25T17:49:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://plataformasalud.ar/inicio.html</loc>
+  <lastmod>2022-12-25T17:49:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://plataformasalud.ar/abcsalud.html</loc>
+  <lastmod>2022-12-25T17:49:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://plataformasalud.ar/funcionalidades.html</loc>
+  <lastmod>2022-12-25T17:49:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://plataformasalud.ar/historias_francisca.html</loc>
+  <lastmod>2022-12-25T17:49:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://plataformasalud.ar/marca.html</loc>
+  <lastmod>2022-12-25T17:49:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://plataformasalud.ar/page9.html</loc>
+  <lastmod>2022-12-25T17:49:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://plataformasalud.ar/prototipo.html</loc>
+  <lastmod>2022-12-25T17:49:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://plataformasalud.ar/protitposmartphone.html</loc>
+  <lastmod>2022-12-25T17:49:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://plataformasalud.ar/prototipodesktop.html</loc>
+  <lastmod>2022-12-25T17:49:52+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
